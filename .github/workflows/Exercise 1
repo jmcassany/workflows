@@ -1,0 +1,17 @@
+name: jm_workflow1
+
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'text a mostrar'
+        required: true
+        default: 'hello world'
+jobs:
+  job1:
+    name: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: step 1
+        run: |
+          echo "${{github.event.inputs.message}}"
