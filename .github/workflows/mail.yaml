@@ -16,8 +16,8 @@ jobs:
           password: ${{secrets.MAIL_PASSWORD}}
           subject: saludos
           # Literal body:
-          body: Hi I'm John Smith. Build job of ${{github.repository}} completed successfully!
-          to: jcassany@imim.es
+          body: Hi I'm Joan Marc Jr. Build job of ${{github.repository}} completed successfully!
+          to: jmcarbo@imim.es
           from: Joan Marc Cassany Biosca
           # Optional content type (defaults to text/plain):
           content_type: text/html
