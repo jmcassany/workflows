@@ -1,0 +1,26 @@
+name: mail_workflow
+
+on:
+  workflow_dispatch:
+jobs:
+  job-email:
+    name: mail
+    runs-on: ubuntu-latest
+    steps:
+      - name: mail
+        uses: dawidd6/action-send-mail@v2
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          subject: saludos
+          # Literal body:
+          body: Hi I'm John Smith. Build job of ${{github.repository}} completed successfully!
+          to: jcassany@imim.es
+          from: Joan Marc Cassany Biosca
+          # Optional content type (defaults to text/plain):
+          content_type: text/html
+          # Optional converting Markdown to HTML (set content_type to text/html too):
+          convert_markdown: true
+

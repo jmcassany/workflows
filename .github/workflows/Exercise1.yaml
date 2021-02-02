@@ -15,6 +15,4 @@ jobs:
       - name: step 1
         run: |
           echo "${{github.event.inputs.message}}"
-      - name: paso 2
-        run: |
-          echo estás avisado: "${{github.event.inputs.message}}"
+      
