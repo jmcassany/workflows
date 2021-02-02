@@ -10,7 +10,7 @@ jobs:
       - name: mail
         uses: dawidd6/action-send-mail@v2
         with:
-          server_address: smtp.imim.es
+          server_address: smtp.gmail.com
           server_port: 465 
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
