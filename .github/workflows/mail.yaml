@@ -12,8 +12,8 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465 
-          username: ${{secrets.MAIL_USERNAME}}
-          password: ${{secrets.MAIL_PASSWORD}}
+          username: jmcassani@gmail.com
+          password: joanmarc
           subject: saludos
           # Literal body:
           body: Hi I'm John Smith. Build job of ${{github.repository}} completed successfully!
